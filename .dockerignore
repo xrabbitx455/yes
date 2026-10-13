@@ -1,4 +1,5 @@
 .git
+.railway/config.json
 **/node_modules
 studio/data
 exports/voices

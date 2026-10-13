@@ -1,4 +1,6 @@
 tools/node_modules/
+node_modules/
+.railway/config.json
 exports/voices/
 exports/*.wav
 exports/*

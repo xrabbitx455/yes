@@ -52,5 +52,5 @@ Browser validation exercises representative frames across all shots, determinist
 The integrated series studio, account-based library, onboarding, and MP4 pipeline are in [studio/README.md](studio/README.md). Run `node studio/server.cjs` from this repository to start ToonFlow on port 3000. The original episode player remains available through its original server script.
 # Public hosting
 
-The Railway deployment instructions for ToonFlow are in [studio/DEPLOY.md](studio/DEPLOY.md). The website currently runs in this workspace; no public domain has been issued.
+ToonFlow is live at [toonflow-xrabbitx455.up.railway.app](https://toonflow-xrabbitx455.up.railway.app/). Railway deployment and owner-account instructions are in [studio/DEPLOY.md](studio/DEPLOY.md).
 
