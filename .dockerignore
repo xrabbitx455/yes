@@ -1,0 +1,12 @@
+.git
+**/node_modules
+studio/data
+exports/voices
+exports/stills/*.png
+!exports/stills/shot-212.png
+exports/*.wav
+exports/render-progress.json
+studio/*-preview.png
+studio/test-report.json
+studio/*-report.json
+*.zip

@@ -1,0 +1,164 @@
+[
+  {
+    "id": "1",
+    "question": "What is your age range?",
+    "stage": "Getting To Know You",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "Under 13",
+      "13\u201317",
+      "18\u201324",
+      "25\u201334",
+      "35\u201344",
+      "45\u201354",
+      "55\u201364",
+      "65+",
+      "Prefer not to say"
+    ]
+  },
+  {
+    "id": "2",
+    "question": "How would you describe yourself?",
+    "stage": "Getting To Know You",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "Independent creator",
+      "Animator / Artist",
+      "Content creator / Influencer",
+      "Student",
+      "Teacher / Educator",
+      "Professional filmmaker",
+      "Animation studio / Production team",
+      "Hobbyist",
+      "Other"
+    ]
+  },
+  {
+    "id": "3",
+    "question": "How experienced are you with animation?",
+    "stage": "Getting To Know You",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "Complete beginner",
+      "Beginner \u2014 I\u2019ve experimented before",
+      "Intermediate \u2014 I\u2019ve made animations",
+      "Advanced \u2014 I regularly create animations",
+      "Professional \u2014 I work in animation"
+    ]
+  },
+  {
+    "id": "4",
+    "question": "What do you plan on using ToonFlow for?",
+    "stage": "Your Creative Goals",
+    "multiple": true,
+    "optional": true,
+    "options": [
+      "Creating my own animated series",
+      "Producing animated short films",
+      "Creating YouTube or social media content",
+      "Making animated music videos",
+      "Creating cartoons for entertainment",
+      "Developing animated stories and characters",
+      "Educational or training animations",
+      "Experimenting with animation",
+      "Professional or commercial productions"
+    ]
+  },
+  {
+    "id": "5",
+    "question": "What animation styles interest you?",
+    "stage": "Your Creative Goals",
+    "multiple": true,
+    "optional": true,
+    "options": [
+      "2D Cartoon Animation",
+      "Anime-inspired Animation",
+      "Stick Figure Animation",
+      "3D Animation",
+      "Comic Book Animation",
+      "Motion Graphics",
+      "Stop-motion Style",
+      "Not sure yet"
+    ]
+  },
+  {
+    "id": "6",
+    "question": "How do you plan to use ToonFlow?",
+    "stage": "Your Creative Goals",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "Just for fun",
+      "Personal creative projects",
+      "Building a YouTube or social media channel",
+      "School or educational projects",
+      "Freelance or client work",
+      "Running an animation studio or business"
+    ]
+  },
+  {
+    "id": "7",
+    "question": "How did you discover ToonFlow?",
+    "stage": "Discovering Toonflow",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "YouTube",
+      "TikTok",
+      "Instagram",
+      "Facebook",
+      "Google Search",
+      "Reddit",
+      "Discord",
+      "Friend or family recommendation",
+      "Online advertisement",
+      "Other"
+    ]
+  },
+  {
+    "id": "8",
+    "question": "What made you interested in trying ToonFlow?",
+    "stage": "Discovering Toonflow",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "I want to bring my own stories to life",
+      "I want an easier way to animate",
+      "I\u2019m interested in AI-assisted animation",
+      "I want to create a complete animated series",
+      "I\u2019m exploring new creative software",
+      "Someone recommended it to me"
+    ]
+  },
+  {
+    "id": "9",
+    "question": "How do you prefer to create animations?",
+    "stage": "Personalizing Your Experience",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "AI-assisted generation",
+      "Traditional manual animation",
+      "A combination of AI and manual editing",
+      "I\u2019m not sure yet"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "What would you like to do first?",
+    "stage": "Personalizing Your Experience",
+    "multiple": false,
+    "optional": true,
+    "options": [
+      "Create my first animated series",
+      "Design my first character",
+      "Build an animated environment",
+      "Create a short animation",
+      "Explore the software",
+      "Start with a guided tutorial"
+    ]
+  }
+]

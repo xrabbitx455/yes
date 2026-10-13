@@ -1,0 +1,2 @@
+const fs=require('fs');
+exports.launch=async()=>{const {chromium}=require('../tools/node_modules/playwright');for(const p of ['/tmp/frontlines-config','/tmp/frontlines-cache','/tmp/frontlines-runtime'])fs.mkdirSync(p,{recursive:true});return chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox','--disable-dev-shm-usage'],env:{...process.env,XDG_CONFIG_HOME:'/tmp/frontlines-config',XDG_CACHE_HOME:'/tmp/frontlines-cache',XDG_RUNTIME_DIR:'/tmp/frontlines-runtime'}});};

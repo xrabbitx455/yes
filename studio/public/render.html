@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Studio frame renderer</title></head><body style="margin:0;background:#000"><canvas id="render-canvas" width="1920" height="1080"></canvas><script type="module">
+import {Renderer} from '/engine.js';
+const id=new URL(location.href).searchParams.get('job');
+const response=await fetch('/api/jobs/'+encodeURIComponent(id)+'/project');if(!response.ok)throw Error('Render snapshot unavailable');
+const project=await response.json();const canvas=document.querySelector('canvas');const resolution=Number(new URL(location.href).searchParams.get('resolution')||1080);canvas.height=resolution;canvas.width=Math.round(resolution*16/9/2)*2;
+const renderer=new Renderer(canvas);await renderer.load(project);
+window.renderFrame=t=>renderer.render(project,t);window.project=project;window.renderReady=true;
+</script></body></html>

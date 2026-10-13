@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mespeak": "2.0.2",
+    "playwright": "1.62.1"
+  }
+}

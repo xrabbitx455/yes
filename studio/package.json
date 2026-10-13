@@ -1,0 +1,1 @@
+{"name":"toonflow","version":"1.0.0","private":true,"description":"An integrated, code-directed 2D series studio","scripts":{"start":"node server.cjs","test":"node scripts/test.cjs","test:deployment":"node scripts/test-deployment.cjs"},"engines":{"node":">=22.13"}}

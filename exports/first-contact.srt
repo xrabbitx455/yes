@@ -1,0 +1,187 @@
+1
+00:00:01,000 --> 00:00:11,000
+COMMAND • RADIO: Echo Actual, this is Command. Be advised, we've lost contact with Observation Post Seven. Last transmission was approximately forty minutes ago.
+
+2
+00:00:14,000 --> 00:00:20,000
+MASON: Command lost contact with Echo-Seven. Our job is to find out why.
+
+3
+00:00:21,000 --> 00:00:25,000
+JACKSON: Probably another broken radio.
+
+4
+00:00:26,000 --> 00:00:32,000
+MASON: Then we fix it and come home. Weapons tight unless threatened. Understood?
+
+5
+00:00:32,000 --> 00:00:34,500
+SQUAD: Roger.
+
+6
+00:00:59,000 --> 00:01:04,000
+JACKSON: You think we're gonna see anything out here?
+
+7
+00:01:05,000 --> 00:01:08,000
+HAYES: Hopefully not.
+
+8
+00:01:09,000 --> 00:01:13,000
+JACKSON: Man, you guys are boring.
+
+9
+00:01:17,000 --> 00:01:25,000
+COMMAND • RADIO: Echo One, be advised. Unconfirmed movement reported near the northern boundary. Exercise caution.
+
+10
+00:01:26,000 --> 00:01:29,000
+MASON: Echo One copies.
+
+11
+00:01:30,000 --> 00:01:34,000
+MASON: Pull over. We walk from here.
+
+12
+00:01:45,000 --> 00:01:51,000
+MASON: Stay alert. Nobody gets separated.
+
+13
+00:02:02,000 --> 00:02:06,000
+REED: Where is everybody?
+
+14
+00:02:07,000 --> 00:02:13,000
+MASON: That's what we're here to find out.
+
+15
+00:02:28,000 --> 00:02:33,000
+JACKSON: Sarge. You need to see this.
+
+16
+00:02:35,000 --> 00:02:39,000
+MASON: Everybody, stay sharp.
+
+17
+00:02:41,000 --> 00:02:52,000
+HAYES: Command, Echo One. We're at Echo-Seven. Position appears abandoned. Signs of a possible engagement.
+
+18
+00:02:53,000 --> 00:02:58,000
+COMMAND • RADIO: Echo One, say again your last?
+
+19
+00:03:00,000 --> 00:03:04,000
+REED: Sergeant... movement.
+
+20
+00:03:11,000 --> 00:03:15,000
+MASON: Hold your fire.
+
+21
+00:03:26,000 --> 00:03:34,000
+MASON: Unidentified patrol! You're inside Blue-controlled territory! Identify yourselves!
+
+22
+00:03:34,000 --> 00:03:42,000
+RED LEADER: This territory is under Red military authority. Lower your weapons.
+
+23
+00:03:43,000 --> 00:03:49,000
+MASON: Negative. We're not looking for a fight.
+
+24
+00:03:54,000 --> 00:03:58,000
+MASON: CONTACT! GET DOWN!
+
+25
+00:04:18,000 --> 00:04:22,000
+JACKSON: I GOT 'EM!
+
+26
+00:04:25,000 --> 00:04:30,000
+MASON: Short bursts! Watch your ammunition!
+
+27
+00:04:37,000 --> 00:04:41,000
+HAYES: AH! I'M HIT!
+
+28
+00:04:42,000 --> 00:04:44,000
+REED: Hayes!
+
+29
+00:04:45,000 --> 00:04:50,000
+REED: Stay with me. You're gonna be fine.
+
+30
+00:04:50,000 --> 00:04:55,000
+HAYES: Radio... get the radio...
+
+31
+00:04:56,000 --> 00:05:05,000
+RED LEADER: Red Two, this is Patrol Six! We're taking fire at Echo-Seven! Request immediate support!
+
+32
+00:05:05,000 --> 00:05:11,000
+RED COMMAND: Patrol Six, disengage if possible. Reinforcements are moving.
+
+33
+00:05:11,000 --> 00:05:15,000
+RED LEADER: We're not leaving him!
+
+34
+00:05:16,000 --> 00:05:21,000
+JACKSON: They're pulling back! I can get 'em!
+
+35
+00:05:21,000 --> 00:05:25,000
+MASON: Negative! Hold position!
+
+36
+00:05:26,000 --> 00:05:29,000
+MASON: Reed, status?
+
+37
+00:05:29,000 --> 00:05:35,000
+REED: Hayes is stable, but we need to get him out.
+
+38
+00:05:36,000 --> 00:05:48,000
+MASON: Command, Echo One. Troops in contact. Multiple enemy combatants. One friendly wounded. Request immediate extraction and reinforcements.
+
+39
+00:05:54,000 --> 00:06:00,000
+JACKSON: They just crossed the border and started shooting.
+
+40
+00:06:00,000 --> 00:06:05,000
+MASON: We don't know who fired first.
+
+41
+00:06:07,000 --> 00:06:11,000
+JACKSON: Does it matter?
+
+42
+00:06:16,000 --> 00:06:21,000
+COMMAND • RADIO: Echo One, this is Command. We read you. What's your situation?
+
+43
+00:06:21,000 --> 00:06:27,000
+MASON: Echo-Seven is compromised. Red troops crossed the boundary. We exchanged fire. Requesting immediate support.
+
+44
+00:06:28,000 --> 00:06:31,000
+COMMAND • RADIO: Echo One... you need to leave that position. Now.
+
+45
+00:06:31,000 --> 00:06:32,000
+MASON: Why?
+
+46
+00:06:32,000 --> 00:06:35,000
+COMMAND • RADIO: We've detected multiple armored vehicles moving south toward your location.
+
+47
+00:06:42,000 --> 00:06:52,000
+RED COMMANDER: All units, this is Red Actual. Phase One is underway. Begin the advance.
