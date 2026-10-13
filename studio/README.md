@@ -24,7 +24,8 @@ For a public Railway deployment, see [DEPLOY.md](DEPLOY.md). It uses the root Do
 - Separate **date created** and **date published**. Film publication requires genre and theme. Published films and playlists have public watch pages; playlists only publish when their included films are published.
 - Scene, cast, dialogue, location, camera, pose, keyframe, vehicle and effect editing. Character sheets and background references can be uploaded, with an explicit action to use an image as the scene background.
 - Script-to-scenes and natural-language direction through the server-side Codex CLI bridge. Model output uses a constrained project schema and is validated before saving. Conflicting manual edits are preserved and require applying the returned draft.
-- Python/NumPy original sound design and meSpeak synthetic draft dialogue. Preview audio is generated from the same project snapshot used for final export. Uploaded WAV/MP3 music can be selected in Assets.
+- Python/NumPy original sound design and meSpeak synthetic draft dialogue. With `ELEVENLABS_API_KEY` set privately on the server, the Audio panel loads ElevenLabs account voices, searches the community library, assigns voices per character, and caches generated dialogue clips for previews and exports. The key is never sent to the browser. Preview audio is generated from the same project snapshot used for final export.
+- The Audio panel links to Pixabay Music. Download a track from Pixabay, then upload the WAV/MP3 with its source page URL. ToonFlow saves the music with the project, loops it across the episode, and lets you adjust volume. Pixabay music browsing and downloading happen on Pixabay because its public API does not supply this workflow.
 - Chromium renders deterministic Canvas frames; FFmpeg produces H.264/AAC MP4. Downloads support 240p, 360p, 480p, 720p, 1080p, 1440p, and 4K. Higher resolution usually takes longer and produces a larger file; actual size is reported on completion.
 - Completed-film download variants can be resized to another resolution. Resizing does not add original detail. For native 4K, select 4K before rendering in Studio.
 - Activity & progress lists each profile's Codex, audio, render and conversion jobs. Frame rendering has measured progress; model thinking uses an indeterminate meter rather than claiming a known completion percentage.
@@ -62,7 +63,7 @@ node studio/scripts/test.cjs
 TEST_CODEX=1 node studio/scripts/test.cjs
 ```
 
-Tests create a separate temporary data directory. The report is `studio/test-report.json`. Browser checks cover signup/agreement, onboarding, folders and playlists, publication metadata, profile edits, account isolation, animation controls, persistent edits, reference images, preview sound, real MP4 generation, 240p/4K conversions, activity, and mobile layout. Generated videos are probed and fully decoded. No zero-test or simulated render is counted as a passing video check.
+Tests create a separate temporary data directory. The report is `studio/test-report.json`. Browser checks cover signup/agreement, onboarding, folders and playlists, publication metadata, profile edits, account isolation, animation controls, persistent edits, Pixabay-source music, preview sound, real MP4 generation, 240p/4K conversions, activity, and mobile layout. A mocked ElevenLabs API test covers catalog lookup, community voice import, synthesis, and cache reuse without spending API credits. Generated videos are probed and fully decoded. No zero-test or simulated render is counted as a passing video check.
 
 ## Production scope
 

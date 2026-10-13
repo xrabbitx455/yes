@@ -28,14 +28,14 @@ for scene in project['scenes']:
   elif effect['type']=='rain':add(offset,rng.normal(0,.009,len(t))*envelope)
  offset+=d
 if len(sys.argv)>4 and sys.argv[4]:
- raw=subprocess.check_output(['ffmpeg','-v','error','-i',sys.argv[4],'-f','f32le','-ar',str(SR),'-ac','2','-t',str(duration),'-']);music=np.frombuffer(raw,'<f4').reshape(-1,2);add(0,music,.22)
+ raw=subprocess.check_output(['ffmpeg','-v','error','-stream_loop','-1','-i',sys.argv[4],'-f','f32le','-ar',str(SR),'-ac','2','-t',str(duration),'-']);music=np.frombuffer(raw,'<f4').reshape(-1,2);add(0,music,float(project.get('musicVolume',.22)))
 cues=json.loads((out/'voices/cues.json').read_text()) if voices else []
 for cue in cues:
- with wave.open(str(out/'voices'/cue['file']),'rb') as f:
-  raw=f.readframes(f.getnframes());width=f.getsampwidth();channels=f.getnchannels();rate=f.getframerate()
- data=np.frombuffer(raw,'<i2').astype(np.float32)/32768 if width==2 else (np.frombuffer(raw,np.uint8).astype(np.float32)-128)/128
- if channels>1:data=data.reshape(-1,channels).mean(axis=1)
- length=min(round(len(data)*SR/rate),round((cue['end']-cue['start']-.03)*SR));data=np.interp(np.linspace(0,len(data)-1,length),np.arange(len(data)),data).astype(np.float32)
+ raw=subprocess.check_output(['ffmpeg','-v','error','-i',str(out/'voices'/cue['file']),'-f','f32le','-ar',str(SR),'-ac','1','-'])
+ data=np.frombuffer(raw,'<f4').astype(np.float32)
+ length=min(len(data),max(1,round((cue['end']-cue['start']-.03)*SR)))
+ if len(data)>length:data=np.interp(np.linspace(0,len(data)-1,length),np.arange(len(data)),data).astype(np.float32)
+ else:data=data[:length]
  if 'COMMAND' in cue['speaker']:
   data=(data-np.convolve(data,np.ones(17)/17,mode='same'))*1.6+ rng.normal(0,.003,length)
  data=data/max(float(np.max(np.abs(data))),.01)*.29;start=round(cue['start']*SR);mix[start:start+length]*=.55;add(cue['start'],data)
