@@ -7,9 +7,7 @@ RUN apt-get update \
 WORKDIR /app
 COPY tools/package.json tools/package-lock.json ./tools/
 COPY studio/runtime/package.json studio/runtime/package-lock.json ./studio/runtime/
-RUN --mount=type=secret,id=proxy_ca \
-    if [ -f /run/secrets/proxy_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca; fi; \
-    npm --prefix tools ci --ignore-scripts --no-audit --no-fund \
+RUN npm --prefix tools ci --ignore-scripts --no-audit --no-fund \
     && npm --prefix studio/runtime ci --ignore-scripts --no-audit --no-fund
 
 COPY . .
